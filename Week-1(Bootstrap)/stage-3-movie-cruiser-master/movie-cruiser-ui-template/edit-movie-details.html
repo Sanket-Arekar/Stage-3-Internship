@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Edit Movie Details</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(1, 69, 95)">
+        <!-- Nav Bar Branding -->
+        <a class="navbar-brand" href="movie-list.html"><span class="material-icons material-logo mr-2">
+                movie
+            </span>Movie Curiser</a>
+        <!-- Nav Bar Toggle Buttom -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <!-- Nav Bar Options -->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="movie-list.html">Movie List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <!-- Main Body -->
+    <div class="container-fulid m-5">
+        <h2>Edit Movie Details</h2>
+        <form action="">
+            <div class="row">
+                <div class="col-sm-12 col-xl-12 form-group">
+                    <label for="title">Movie Title</label>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="" required>
+                    <div class="invalid-feedback">Movie Title is required</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xl-4 form-group">
+                    <label for="boxOffice">Box Office</label>
+                    <input type="text" name="boxOffice" id="boxOffice" class="form-control" placeholder="" required>
+                    <div class="invalid-feedback">Box Office is required</div>
+                    <div class="invalid-feedback">Box Office has to be number</div>
+                </div>
+                <div class="col-sm-12 col-xl-4 form-group">
+                    <label for="dateOfLaunch">Date of Launch</label>
+                    <input type="text" name="dateOfLaunch" id="dateOfLaunch" class="form-control" placeholder=""
+                        required>
+                    <div class="invalid-feedback">Date of Launch is reqired</div>
+                </div>
+                <div class="col-sm-12 col-xl-4 form-group">
+                    <label for="category">Genre</label>
+                    <select class="form-control" id="category" required>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Superhero">Super Hero</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Thriller">Thriller</option>
+                    </select>
+                    <div class="invalid-feedback">Select one Genre</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 col-xl-6">
+                    <label for="active">Active</label>
+                    <div>
+                        <label class="radio-inline "><input type="radio" name="Yes">Yes</label>&nbsp;&nbsp;&nbsp;
+                        <label class="radio-inline"><input type="radio" name="No">No</label>
+                    </div>
+                    <div class="invalid-feedback">Select an active status</div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <label for="active">Trailler Available</label>
+                    <div>
+                        <label class="radio-inline "><input type="radio" name="Yes">Yes</label>&nbsp;&nbsp;&nbsp;
+                        <label class="radio-inline"><input type="radio" name="No">No</label>
+                    </div>
+                    <div class="invalid-feedback">Select Trailler status</div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <button class="btn btn-save" type="submit">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Main Body -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small position-bottom " style="background-color:rgb(1, 69, 95)">
+        <div class="footer-copyright text-left py-1 ml-3 text-white">Copyright 2020</div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+</body>
+<script>
+
+    $('#dateOfLaunch').datepicker({
+
+        uiLibrary: 'bootstrap4',
+
+        format: 'dd/mm/yyyy'
+
+    });
+
+</script>
+
+</html>

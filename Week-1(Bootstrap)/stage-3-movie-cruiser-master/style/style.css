@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.material-icons.material-logo {
+    vertical-align: bottom;
+}
+.fa {
+    font-size: 0.9rem;
+}
+.btn-save {
+    background-color: rgb(1, 69, 95);
+    color: aliceblue;
+}
+.badge-active {
+    vertical-align: baseline;
+}
+.material-launch {
+    font-size: 17px;
+    vertical-align: middle;
+}
+.material-trailer {
+    vertical-align: middle;
+}
+.btn-edit {
+    vertical-align: bottom;
+    background-color: rgb(1, 69, 95);
+}
+.btn-watch {
+    background-color: rgb(1, 69, 95);
+}
+
+.materialheart {
+    vertical-align:baseline;
+}
+.materialheart:hover {
+    color: red;
+    cursor: pointer;
+
+}
+.material-search {
+    font-size: 18px;
+}
+
+.material-icons.material-delete:hover {
+    color: red;
+    font-size: 25px;
+}
